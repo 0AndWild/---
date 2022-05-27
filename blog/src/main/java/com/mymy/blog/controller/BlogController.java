@@ -5,6 +5,7 @@ import com.mymy.blog.domain.BlogRepository;
 import com.mymy.blog.domain.BlogRequestDto;
 import com.mymy.blog.service.BlogService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

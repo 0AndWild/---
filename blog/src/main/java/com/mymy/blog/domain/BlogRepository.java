@@ -6,7 +6,7 @@ import java.util.List;
 
 public interface BlogRepository extends JpaRepository<Blog, Long> {
     //JPA가 개발자 대신 적절한 SQL을 생성하여 DB에 전달하고, 객체를 자동으로 Mapping해준다
-    //Blog 컬럼과 Long Id에 이 방식을 적용해줌!
+    //Blog는 Entity 클래스명 Long은 Entity 클래스의 pk의 자료형이다.
     List<Blog> findAllByOrderByModifiedAtDesc();
     //ByOrderByModifiedAt 수정된 날짜를 기준으로 정렬을 해줘 라는 것 // Desc는 내림차순으로 정렬을 말함(즉 최신순으로 정렬하는 것)
     //만약 다른 방식으로 정렬을 원하면 https://docs.spring.io/spring-data/jpa/docs/current/reference/html/#jpa.query-methods
